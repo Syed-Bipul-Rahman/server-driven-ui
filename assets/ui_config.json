@@ -1,0 +1,581 @@
+{
+  "type": "listView",
+  "shrinkWrap": true,
+  "children": [
+    {
+      "type": "container",
+      "padding": 16,
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "text",
+            "text": "🚀 Server-Driven UI Demo",
+            "style": {
+              "fontSize": 28,
+              "fontWeight": "bold",
+              "color": "blue"
+            },
+            "textAlign": "center"
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "text",
+            "text": "This entire UI is rendered from JSON configuration!",
+            "style": {
+              "fontSize": 16,
+              "color": "gray"
+            },
+            "textAlign": "center"
+          },
+          {
+            "type": "sizedBox",
+            "height": 24
+          },
+          {
+            "type": "divider",
+            "thickness": 2,
+            "color": "blue"
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          }
+        ]
+      }
+    },
+    {
+      "type": "card",
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 16
+      },
+      "elevation": 4,
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "text",
+            "text": "📝 Text Examples",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": "bold",
+              "color": "green"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 8
+          },
+          {
+            "type": "text",
+            "text": "Regular text with default styling",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "text",
+            "text": "Bold red text with larger font",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": "bold",
+              "color": "red"
+            }
+          },
+          {
+            "type": "richText",
+            "spans": [
+              {
+                "text": "RichText example with ",
+                "style": {
+                  "fontSize": 14,
+                  "color": "black"
+                }
+              },
+              {
+                "text": "bold",
+                "style": {
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "color": "purple"
+                }
+              },
+              {
+                "text": " and ",
+                "style": {
+                  "fontSize": 14,
+                  "color": "black"
+                }
+              },
+              {
+                "text": "colored",
+                "style": {
+                  "fontSize": 14,
+                  "fontStyle": "italic",
+                  "color": "orange"
+                }
+              },
+              {
+                "text": " spans!",
+                "style": {
+                  "fontSize": 14,
+                  "color": "black"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "card",
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 16
+      },
+      "elevation": 4,
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "text",
+            "text": "🔘 Interactive Elements",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": "bold",
+              "color": "orange"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 12
+          },
+          {
+            "type": "button",
+            "text": "Log Message Button",
+            "action": {
+              "type": "log",
+              "message": "Hello from SDUI button!"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 8
+          },
+          {
+            "type": "button",
+            "text": "Snackbar Button",
+            "action": {
+              "type": "snackbar",
+              "message": "This would show a snackbar!"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "textField",
+            "label": "Enter your name",
+            "hint": "Type something..."
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "checkbox",
+            "label": "Enable notifications",
+            "value": false
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "dropdown",
+            "label": "Choose your favorite color",
+            "options": ["Red", "Blue", "Green", "Yellow", "Purple"]
+          }
+        ]
+      }
+    },
+    {
+      "type": "card",
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 16
+      },
+      "elevation": 4,
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "text",
+            "text": "🎨 Layout & Styling",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": "bold",
+              "color": "purple"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 12
+          },
+          {
+            "type": "text",
+            "text": "Row layout example:",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 8
+          },
+          {
+            "type": "row",
+            "mainAxisAlignment": "spaceEvenly",
+            "children": [
+              {
+                "type": "container",
+                "width": 50,
+                "height": 50,
+                "color": "red",
+                "child": {
+                  "type": "center",
+                  "child": {
+                    "type": "text",
+                    "text": "1",
+                    "style": {
+                      "color": "white",
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "container",
+                "width": 50,
+                "height": 50,
+                "color": "green",
+                "child": {
+                  "type": "center",
+                  "child": {
+                    "type": "text",
+                    "text": "2",
+                    "style": {
+                      "color": "white",
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "container",
+                "width": 50,
+                "height": 50,
+                "color": "blue",
+                "child": {
+                  "type": "center",
+                  "child": {
+                    "type": "text",
+                    "text": "3",
+                    "style": {
+                      "color": "white",
+                      "fontWeight": "bold"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "text",
+            "text": "Container with padding and border radius:",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 8
+          },
+          {
+            "type": "container",
+            "padding": 16,
+            "color": "#E3F2FD",
+            "borderRadius": 12,
+            "child": {
+              "type": "text",
+              "text": "This text is inside a styled container with padding and rounded corners!",
+              "style": {
+                "fontSize": 14,
+                "color": "blue"
+              },
+              "textAlign": "center"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "card",
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 16
+      },
+      "elevation": 4,
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "text",
+            "text": "⭐ Icons & Media",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": "bold",
+              "color": "pink"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 12
+          },
+          {
+            "type": "text",
+            "text": "Icon examples:",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 8
+          },
+          {
+            "type": "row",
+            "mainAxisAlignment": "spaceEvenly",
+            "children": [
+              {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "icon",
+                    "icon": "star",
+                    "size": 32,
+                    "color": "yellow"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Star",
+                    "style": {
+                      "fontSize": 12
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "icon",
+                    "icon": "favorite",
+                    "size": 32,
+                    "color": "red"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Favorite",
+                    "style": {
+                      "fontSize": 12
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "icon",
+                    "icon": "home",
+                    "size": 32,
+                    "color": "blue"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Home",
+                    "style": {
+                      "fontSize": 12
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "icon",
+                    "icon": "settings",
+                    "size": 32,
+                    "color": "gray"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Settings",
+                    "style": {
+                      "fontSize": 12
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "text",
+            "text": "Network image example:",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": "bold"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 8
+          },
+          {
+            "type": "center",
+            "child": {
+              "type": "image",
+              "url": "https://picsum.photos/200/150",
+              "width": 200,
+              "height": 150,
+              "fit": "cover"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "card",
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 16
+      },
+      "elevation": 4,
+      "child": {
+        "type": "column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "text",
+            "text": "🔧 Advanced Features",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": "bold",
+              "color": "brown"
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 12
+          },
+          {
+            "type": "text",
+            "text": "✅ Extensible widget registration system",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ Comprehensive error handling",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ Fallback UI for failed configurations",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ Modular and loosely coupled architecture",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ Support for styling via JSON",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ Cross-platform compatibility (Android/iOS)",
+            "style": {
+              "fontSize": 14
+            }
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "divider",
+            "thickness": 1,
+            "color": "gray"
+          },
+          {
+            "type": "sizedBox",
+            "height": 16
+          },
+          {
+            "type": "center",
+            "child": {
+              "type": "text",
+              "text": "🎉 That's a wrap! This entire UI was generated from JSON!",
+              "style": {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "color": "green"
+              },
+              "textAlign": "center"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
