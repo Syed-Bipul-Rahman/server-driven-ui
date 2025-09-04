@@ -40,6 +40,8 @@ A comprehensive Flutter MVP app that demonstrates **Server-Driven UI (SDUI)** by
 
 ## 📱 Screenshots
 
+![Server-Driven UI Demo](screenshots/screenshot.png)
+
 The app demonstrates all features in a single scrollable interface:
 - Welcome header with styled text
 - Interactive elements (buttons, forms)
